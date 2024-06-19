@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)  # Ini mengaktifkan CORS untuk semua rute
 
 # Konfigurasi database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://gempa:@localhost/gempa'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/gempa'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy()
 db.init_app(app)  # inisialisasi app Flask ke SQLAlchemy
